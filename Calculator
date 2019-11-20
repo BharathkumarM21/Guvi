@@ -1,8 +1,9 @@
-print("Calculator")
-m=int(input())
-n=int(input())
+print("-----Calculator-----")
+m , n = input().split()
+m=int(m)
+n=int(n)
 print("1.Subtract  2.Divide  3.Add  4.Multiply  5.Modulo-Divison" )
-number = input("Enter Your Values")
+number = input("Enter Your Values: ")
 if (number == "1"):
   answer = m - n
   print(answer)
@@ -19,4 +20,4 @@ if (number == "5"):
   answer = m % n
   print(answer)
 else:
-  print("Re-Enter the value again")
+  print("****Re-Enter the value again****")
