@@ -3,19 +3,19 @@ m=int(input())
 n=int(input())
 print("1.Subtract  2.Divide  3.Add  4.Multiply  5.Modulo-Divison" )
 number = input("Enter Your Values")
-if number == "1":
+if (number == "1"):
   answer = m - n
   print(answer)
-if number == "2":
+if (number == "2"):
   answer = m / n
   print(answer)
-if number == "3":
+if (number == "3"):
   answer = m + n
   print(answer)
-if number == "4":
+if (number == "4"):
   answer=m * n
   print(answer)
-if number == "5":
+if (number == "5"):
   answer = m % n
   print(answer)
 else:
