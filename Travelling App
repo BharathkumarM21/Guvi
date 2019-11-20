@@ -1,0 +1,44 @@
+Username = input("Enter the UserName: ")
+MobileNo = int(input("Enter Your MobileNo: "))
+Prime_user = input("Are you a Prime Member:(yes/no) ")
+From_Location = (input("Source: "))
+To_Location = (input("Destination: "))
+#if(From_Location >= 0 and To_Location >= 0):
+  #print("Maintain Path")
+Total = To_Location - From_Location
+if(Prime_user == "yes"):
+  Cat1 = input("Choose SUV / Sedan: ")
+  if (Cat1 == "SUV" or Cat1 == "suv"):
+    Rs = 2 
+    Amount = Total * Rs
+    print("SUV_Amount",int(Amount))
+      
+  if(Cat1 =="Sedan" or Cat1 =="sedan"):
+    Rs = 3
+    Amount = Total * Rs
+    print("Sedan_Amount",Amount) 
+if(Prime_user == "no"):
+  Cat2 = input("Choose Bike / Auto / Mini / Micro: ")
+  if(Cat2 == "Bike" or Cat2 == "bike"):
+    Rs = 2.2
+    Amount = Total * Rs
+    print("Bike_Amount",Amount)
+  elif(Cat2 == "Auto" or Cat2 == "auto"):
+    Rs = 3.5
+    Amount = Total * Rs
+    print("Auto_Amount",Amount)
+  elif(Cat2 == "Mini" or Cat2 == "mini"):
+    Rs = 3.7
+    Amount = Total * Rs
+    print("Mini_Amount",Amount)
+  elif(Cat2 == "Micro" or Cat2 == "micro"):
+    Rs = 4.7 
+    Amount = Total * Rs
+    print("Micro_Amount",Amount)
+print("*****Bill Check*****")
+print("Username: ",Username)
+print("Mobilno: ",MobileNo)
+print("From Location: ",From_Location)
+print("To Location: ",To_Location)
+print("Overall Amount: ",int(Amount))
+
