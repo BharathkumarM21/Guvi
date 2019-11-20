@@ -1,10 +1,21 @@
 Username = input("Enter the UserName: ")
 MobileNo = int(input("Enter Your MobileNo: "))
 Prime_user = input("Are you a Prime Member:(yes/no) ")
-From_Location = (input("Source: "))
-To_Location = (input("Destination: "))
-#if(From_Location >= 0 and To_Location >= 0):
-  #print("Maintain Path")
+while True:
+  From_Location = float(input("Source: "))
+  if(From_Location.isdigit()):
+    if(From_Location == False):
+      print("Enter Valid Value")
+  if(From_Location <0):
+    print("Enter Valid Value")
+  else:
+    break
+while True:
+  To_Location = float(input("Destination: "))
+  if(To_Location <0):
+    print("Enter Valid Value")
+  else:
+    break
 Total = To_Location - From_Location
 if(Prime_user == "yes"):
   Cat1 = input("Choose SUV / Sedan: ")
@@ -41,4 +52,3 @@ print("Mobilno: ",MobileNo)
 print("From Location: ",From_Location)
 print("To Location: ",To_Location)
 print("Overall Amount: ",int(Amount))
-
