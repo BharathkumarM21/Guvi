@@ -1,8 +1,8 @@
 import re,random 
 while True:
     mail=input("Enter Email-Id: ")
-    regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
-    if(re.search(regex,mail)):  
+    expression = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+    if(re.search(expression,mail)):  
         break  
     else:  
         print("Invalid Email")
