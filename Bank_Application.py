@@ -1,4 +1,4 @@
-import re,random 
+import re
 while True:
     mail=input("Enter Email-Id: ")
     expression = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
